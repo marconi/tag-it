@@ -495,7 +495,6 @@
         removeTagByName: function(tagName, animate) {
             var toRemove = [];
             if (this.options.singleField) {
-                existingTags = $(this.options.singleFieldNode).val().split(",");
                 toRemove = this._tags().find("span.tagit-label:contains('" + tagName + "')").closest('.tagit-choice');
             } else {
                 toRemove = this._tags().find("input[value='" + tagName + "']").closest('.tagit-choice');
